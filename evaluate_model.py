@@ -6,7 +6,8 @@ from keras.models import load_model
 from helpers import *
 from constants import *
 from tensorflow.keras.preprocessing.sequence import pad_sequences
-from text_to_speech import text_to_speech
+from text_to_speech import text_to_speech 
+from constants import LENGTH_KEYPOINTS, MAX_LENGTH_FRAMES
 
 def interpolate_keypoints(keypoints, target_length=15):
     current_length = len(keypoints)
